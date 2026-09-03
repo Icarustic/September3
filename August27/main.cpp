@@ -17,8 +17,13 @@ int main()
     //another example of an EXTREMELY commonly-occurring data type: 
     string songName = "Pink pony club"; 
 
+
+    cout << "\033[38;5;201m";
+
     Sleep(time); //unit milliseconds (ms) -> not seconds or hours, etc. 
     cout << "know ";
+
+    cout << "\033[0m";
 
     time = 5'000; //update variable's value to 5 seconds
 
