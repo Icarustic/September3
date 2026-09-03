@@ -20,9 +20,9 @@ int main()
 
     cout << "What is you name?\n"; //use \n this instead of cin.ignore() to clear the input buffer
 
-    cin >> hisName; // reading the input and storing the variable
+	getline(cin, hisName); // allows for spaces in the name, reading the input and storing the variable
 
-    //Test 
+    //cin >> hisName; // reading the input and storing the variable
 
     // prompt for age
 
