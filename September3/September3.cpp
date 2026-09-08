@@ -33,5 +33,16 @@ int main()
 	//cin.fail(); // check if the input is valid
 
     cout << hisName << " is " << hisAge << " years old.\n"; // prints the string variable containing the name, prints name
+
+	//use cin.ignore when swapping between cin and getline to clear the input buffer,
+	//promt for facorite tv show
+	cout << "What is your favorite TV show, " << hisName << "?\n"; //use \n this instead of cin.ignore() to clear the input buffer
+    string favorite_tv_show; //snake case
+
+    cin.ignore();
+
+	getline(cin, favorite_tv_show);
+
+    cout << "You entered this as your favorite TV Show: " << favorite_tv_show << "\n";
 }
 
