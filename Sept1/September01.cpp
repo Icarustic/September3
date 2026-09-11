@@ -25,15 +25,15 @@ void demoRNG() // Being Modular with your code, breaks the code into peices so i
 
 int sqaureTheInput(int theInput) //parenthesesis (pl), parenthesis (sing.)? //Is another type of function
 {
-	return pow(theInput, 2); //the varibale "theInput" is only locally available inside of the function.
+	return pow(theInput, 2); //the variable "theInput" is only locally available inside of the function.
 }
 
 int main()
 {
     //---YenSymbolPrinting---
     int returnValue = _setmode(_fileno(stdout), _O_U16TEXT);
-    wcout << L"Yen sign: \u00A5" << endl; // prints the yen symbol
-    _setmode(_fileno(stdout), returnValue);
+    wcout << L"Yen sign: \u00A5" << endl; // Prints the yen symbol, can be changed by simply replacing the unicode value or pasting the symbol
+    _setmode(_fileno(stdout), returnValue); // Must revert the setmode once you print the unicode symbol to prevent errors
 
     //_setmode()
     //return 0;
