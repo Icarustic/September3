@@ -3,9 +3,9 @@
 #include<string>
 #include<algorithm>
 #include<iomanip>
-#include <windows.h>
-#include <io.h>
-#include <fcntl.h>
+//#include <windows.h>
+#include <io.h> // This is a library that allows you to use functions like _setmode() and _fileno() to change the output mode of the console.
+#include <fcntl.h> // This is a library that allows you to use functions like _O_U16TEXT to set the output mode of the console to Unicode.
 using namespace std; //not a good idea for PROFESSIONAL C++
 
 void demoGettingUserInput()  //return type, 
@@ -30,10 +30,10 @@ int sqaureTheInput(int theInput) //parenthesesis (pl), parenthesis (sing.)? //Is
 
 int main()
 {
-    //---YenSymbolPrinting---
-    int returnValue = _setmode(_fileno(stdout), _O_U16TEXT);
-    wcout << L"Yen sign: \u00A5" << endl; // Prints the yen symbol, can be changed by simply replacing the unicode value or pasting the symbol
-    _setmode(_fileno(stdout), returnValue); // Must revert the setmode once you print the unicode symbol to prevent errors
+    ////---YenSymbolPrinting---
+    //int returnValue = _setmode(_fileno(stdout), _O_U16TEXT);
+    //wcout << L"Yen sign: \u00A5" << endl; // Prints the yen symbol, can be changed by simply replacing the unicode value or pasting the symbol
+    //_setmode(_fileno(stdout), returnValue); // Must revert the setmode once you print the unicode symbol to prevent errors
 
     //_setmode()
     //return 0;
@@ -117,13 +117,14 @@ int main()
 	angstromsPerMeter = pow(10, 10);
 	cout << "Angstrom: " << angstromsPerMeter << "\n"; // fails due to overfloow instead use long long data type instead
 
+    cout << "\n"; //Spacer
 	//---String Length Example---
 	string Name_1 = "Evan Cokrell";
 	string Name_2 = "Roderick Walker";
 	int result = Name_1.length() - count(Name_1.begin(), Name_1.end(), ' '); // this correctly removes spaces from the count
-	cout << result << "\n";
+	cout << "Name 1 Lenght: " << result << "\n";
 	int result2 = Name_2.length() - count(Name_2.begin(), Name_2.end(), ' '); // this correctly removes spaces from the count
-	cout << result2 << "\n";
+	cout << "Name 2 Lenght: " << result2 << "\n";
 
 	//---TotalCostProgram---
 	cout << fixed << setprecision(2); // This is how to use setprecision, which allows you to set the degree of precision for decimals and whole numbers. With 2 meaning 00.00 anything larger or smaller is rounded to the nearest 2 decimal places.
@@ -133,23 +134,30 @@ int main()
 	float Product_2_Price;
 	float Product_3_Price;
 	//getline()
-	while (true) // For testing the code repeatedly
-	{
+	//while (true) // For testing the code repeatedly
+	//{
 		cout << "\nWhat is the price of Product 1?\n";
-		cin >> Product_1_Price;
+		//cin >> Product_1_Price;
+        Product_1_Price = 19.16; // Sani Cloth 
+        cout << "Product 1 Price: $" << Product_1_Price << "\n";
 		cout << "What is the price of Product 2?\n";
-		cin >> Product_2_Price;
+		//cin >> Product_2_Price;
+        Product_2_Price = 98.24; // Clean Good 
+        cout << "Product 2 Price: $" << Product_2_Price << "\n";
 		cout << "What is the price of Product 3?\n";
-		cin >> Product_3_Price;
+        Product_3_Price = 349.99; // Revolution Hydro Clean
+        cout << "Product 3 Price: $" << Product_3_Price << "\n";
+		//cin >> Product_3_Price;
+        
         //if (cin.fail())
         //{
         //	cin.clear(); 
         //}
 
 		TotalCost = Product_1_Price + Product_2_Price + Product_3_Price;
-		cout << "$" << TotalCost;
-        //Add real product prices and maybe comment out the while loop for submission
-	}
+        cout << "TotalCost: $" << TotalCost; //Excluding tax, this is the total cost of the products.
+       
+	//}
     
     //return 0;
 }
