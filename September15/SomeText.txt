@@ -1,0 +1,2 @@
+asdasdf
+This is the second line of output written to the file
