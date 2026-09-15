@@ -5,8 +5,9 @@
   </Configurations>
   <Folder Name="/Solution Items/" />
   <Project Path="August27/August27.vcxproj" Id="2b1b688d-9e35-4da7-8caa-034a67aee2bc" />
-  <Project Path="September01/Sept01.vcxproj" />
-  <Project Path="September03/September03.vcxproj" />
+  <Project Path="ReadingFilesUsingLoops/ReadingFilesUsingLoops.vcxproj" Id="67cc01d0-f803-4a3e-bbbd-7e3baaefff18" />
+  <Project Path="September01/Sept01.vcxproj" Id="ea2fc406-27f6-425f-82f1-9f88854bcefe" />
+  <Project Path="September03/September03.vcxproj" Id="22fe86c9-fa09-4f8e-9f44-b8f23d336823" />
   <Project Path="September10/September10.vcxproj" Id="804ca31d-ff7e-42b5-a30d-cd87900688ee" />
   <Project Path="September11/September11.vcxproj" Id="18de2c28-cbb8-44ef-bf6c-27e730a90d9d" />
   <Project Path="September15/September15.vcxproj" Id="92907174-296e-4efe-9710-43fe6b157247" />

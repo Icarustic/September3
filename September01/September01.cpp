@@ -46,14 +46,14 @@ int main()
 	////black box (abstraction) - you don't need to know how the function works, just that it works and what it does.
 	//
 	//std::cout << RAND_MAX << "\n"; //prints max rand value
-	//int number = 5; 
-	//number = number + 1; 
-	//number++; // number = equal 7
+	int number = 5; 
+	number = number + 1; 
+	number++; // number = equal 7
 
-	//for (int i = 1; i <= 10; ++i) //creates a counter that increases incrementally, and is only possible for a for loop.
-	//{
-	//	cout << "i is: " << i << " and number MOD i is: " << i % number << "\n"; // this creates a counter starting at 1, and counting up till 10, while modding each value to show how the division leads to repeating pattern.
-	//}
+	for (int i = 1; i <= 10; ++i) //creates a counter that increases incrementally, and is only possible for a for loop.
+	{
+		cout << "i is: " << i << " and number MOD i is: " << i % number << "\n"; // this creates a counter starting at 1, and counting up till 10, while modding each value to show how the division leads to repeating pattern.
+	}
 	//int i = 1; 
 	//while (i <= 10) //this shows the same counter loop but using a while loop instead of a for loop.
 	//{

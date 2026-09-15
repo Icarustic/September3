@@ -9,7 +9,7 @@ using namespace std;
 #include<fstream> // f stands for file.
 #include<iostream> // io stands for input/output.
 
-using namespace std;
+//using namespace std;
 
 int main()
 {
@@ -131,6 +131,34 @@ int main()
 
   string palindrome = "step on no pets";
 
-  cout << palindrome.length() << endl;
+  //cout << palindrome.length() << endl;
+
+  //cout << "Enter a message: " << endl;
+  //string message;
+
+  //cin >> message;
+  //cout << "You entered: " << message << endl;
+
+  //float TaxRate = 0.0625;
+  //cout << TaxRate;
+
+  //char Letter = 'z';
+  //cout << Letter;
+
+  //bool Opened = true;
+
+  //const int Minute = 60;
+  //cout << Minute;
+
+  //int Year = 2026;
+  //cout << endl;
+
+  ////float 2020taxRate = 0.0625;//numbers must be after _ or letters to not be misread
+  //cout << pow(2, 2);
+  //cout << endl;
+  //cos(2);
+  //tolower(1);
+  //isdigit(1);
+  
 
 }
